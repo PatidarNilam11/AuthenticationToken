@@ -10,7 +10,6 @@
     <b>Title:</b><%= f.title %><br>
     <b>Description:</b><%= f.description%><br>
 
-
     <p>Image: <%= image_tag f.image if f.image.attached? %> </p>
     
     <%= f.likes.size %> <%= (f.likes.size) == 1 ? 'Like' : 'Likes'%>
