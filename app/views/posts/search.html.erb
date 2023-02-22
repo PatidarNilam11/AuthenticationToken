@@ -1,10 +1,8 @@
 <h1>Search Posts</h1>
 <% @posts.each do |f| %>
 
-    <b>Title:</b><%= f.title %><br>
-    <b>Description:</b><%= f.description%><br>
-
-
-    <p>Image: <%= image_tag f.image if f.image.attached? %> </p>
-    
+  <b>Title:</b><%= f.title %><br>
+  <b>Description:</b><%= f.description%><br>
+  <p>Image: <%= image_tag f.image if f.image.attached? %> </p>
+  
 <%end%>

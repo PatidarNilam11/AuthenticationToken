@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:EDIT, :update, :destroy, :like_post, :NEW]
+  before_action :set_post, only: [:edit, :update, :destroy, :like_post, :new] #except: [:index, :search, :create]
   before_action :set_like, only: :like_post
 
   def index

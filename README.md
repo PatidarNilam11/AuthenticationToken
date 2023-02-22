@@ -22,6 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-# Auth_token
-# token_auth
+
 token_auth

@@ -11,9 +11,5 @@ class Like < ApplicationRecord
     current_count = self.post.like_count.to_i
     total_count = self.active ? current_count + 1 : current_count - 1
     self.post.update(like_count: total_count)
-
   end
-  
-
-  
 end

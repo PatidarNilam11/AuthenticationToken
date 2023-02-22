@@ -2,21 +2,20 @@
 
 <%= form_with model: @post do |form| %>
 
-    <%= form.label :title %>
+  <%= form.label :title %>
 	<%= form.text_field :title %>
 	<br>
 	<br>
 	
 	<div class="field">
-   <%= form.label :description %>
+  <%= form.label :description %>
 	<%= form.text_area :description %>
 	<br>
-    <br>
+  <br>
 
-    <%= form.label :image %>
+  <%= form.label :image %>
 	<%= form.file_field :image%>
 	<br>
 	
-
-    <%= form.submit %>
+ <%= form.submit %>
 <% end %>
