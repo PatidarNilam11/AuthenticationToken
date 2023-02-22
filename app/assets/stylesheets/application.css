@@ -17,12 +17,7 @@
  body {
     background-color: antiquewhite;
   }
-
-  /* .like {
-    text-decoration: none;
-    color: rgb(63, 232, 40);
-  } */
-
+  
   .like-button a:hover, a:focus {
     text-decoration: none;
     color: rgb(82, 221, 36);

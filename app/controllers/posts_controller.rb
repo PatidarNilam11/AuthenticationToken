@@ -67,17 +67,17 @@ class PostsController < ApplicationController
   end
 
   private                           
-    def post_params
-      params.require(:post).permit(:title, :description, :image, :category_id, :active)
+  def post_params
+    params.require(:post).permit(:title, :description, :image, :category_id, :active)
+  end
+
+  def set_post
+    @post = Post.find(params[:id])
+    # render json: @post
+    render json: {message: "post not found"}, status: :not_found unless @post
     end
 
-    def set_post
-      @post = Post.find(params[:id])
-      # render json: @post
-      render json: {message: "post not found"}, status: :not_found unless @post
-     end
-
-    def set_like
-      current_user_like = @post.likes.find_by(user_id: current_user.id)
-    end
+  def set_like
+    current_user_like = @post.likes.find_by(user_id: current_user.id)
+  end
 end
