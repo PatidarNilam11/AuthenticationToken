@@ -33,8 +33,8 @@ class PostsController < ApplicationController
     render json: @post
     else
       render json: @post.errors.full_messages
+    end
   end
-end
 
   def destroy
     current_user.id
@@ -43,7 +43,6 @@ end
     # redirect_to "/"
     render json: "deleted......."
    end
-
 
   def like_post
   # @post = Post.find(params[:id])
